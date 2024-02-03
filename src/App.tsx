@@ -6,11 +6,13 @@ import EventsPage from "./pages/events";
 import FAQPage from "./pages/faq";
 import SponsorsPage from "./pages/sponsors";
 import ApplyPage from "./pages/apply";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
       <main>
+        <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="team" element={<TeamsPage />} />
