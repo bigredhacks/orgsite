@@ -1,5 +1,5 @@
-import { Box, Typography, Button } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Box } from "@mui/material";
+import NavBarButton from "./NavBarButton";
 
 export default function NavBar() {
   return (
@@ -27,41 +27,33 @@ export default function NavBar() {
           justifyContent: "end",
         }}
       >
-        <Link to="/teams">
-          <Button variant="secondary" sx={{ height: "100%" }}>
-            <Typography>Teams</Typography>
-          </Button>
-        </Link>
-
-        <Link to="/events">
-          <Button variant="secondary" sx={{ height: "100%" }}>
-            <Typography>Events</Typography>
-          </Button>
-        </Link>
-
-        <Link to="/faq">
-          <Button variant="secondary" sx={{ height: "100%" }}>
-            <Typography>FAQ</Typography>
-          </Button>
-        </Link>
-
-        <Link to="/sponsors">
-          <Button variant="secondary" sx={{ height: "100%" }}>
-            <Typography>Sponsors</Typography>
-          </Button>
-        </Link>
-
-        <Link to="/apply">
-          <Button
-            variant="primary"
-            sx={{
-              backgroundColor: "#FF3225",
-              px: "1rem",
-            }}
-          >
-            <Typography>Apply</Typography>
-          </Button>
-        </Link>
+        <NavBarButton
+          text="Teams"
+          variant="secondary"
+          sx={{ height: "100%" }}
+        />
+        <NavBarButton
+          text="Events"
+          variant="secondary"
+          sx={{ height: "100%" }}
+        />
+        <NavBarButton
+          text="FAQ"
+          variant="secondary"
+          sx={{ height: "100%" }} />
+        <NavBarButton
+          text="Sponsors"
+          variant="secondary"
+          sx={{ height: "100%" }}
+        />
+        <NavBarButton
+          text="Apply"
+          variant="primary"
+          sx={{
+            backgroundColor: "#FF3225",
+            px: "1rem"
+          }}
+        />
       </Box>
     </Box>
   );
