@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import NavBarButton from "./NavBarButton";
 import NavBarIcon from "./NavBarIcon";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
@@ -11,10 +12,12 @@ export default function NavBar() {
         position: "absolute",
         top: "0px",
         right: "0px",
-        display: "flex"
+        display: "flex",
       }}
     >
-      <NavBarIcon />
+      <Link to="/">
+        <NavBarIcon />
+      </Link>
       <Box
         id="navbar-links"
         sx={{
@@ -33,10 +36,7 @@ export default function NavBar() {
           variant="secondary"
           sx={{ height: "100%" }}
         />
-        <NavBarButton
-          text="FAQ"
-          variant="secondary"
-          sx={{ height: "100%" }} />
+        <NavBarButton text="FAQ" variant="secondary" sx={{ height: "100%" }} />
         <NavBarButton
           text="Sponsors"
           variant="secondary"
@@ -47,7 +47,7 @@ export default function NavBar() {
           variant="primary"
           sx={{
             backgroundColor: "#FF3225",
-            px: "1rem"
+            px: "1rem",
           }}
         />
       </Box>
