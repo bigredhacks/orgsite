@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import NavBarButton from "./NavBarButton";
+import NavBarIcon from "./NavBarIcon";
 
 export default function NavBar() {
   return (
@@ -10,15 +11,10 @@ export default function NavBar() {
         position: "absolute",
         top: "0px",
         right: "0px",
-        display: "flex",
+        display: "flex"
       }}
     >
-      <Box sx={{ flex: "1" }}>
-        <img
-          src="/MLH.png"
-          style={{ width: "7rem", position: "absolute", left: "3rem" }}
-        />
-      </Box>
+      <NavBarIcon />
       <Box
         id="navbar-links"
         sx={{
