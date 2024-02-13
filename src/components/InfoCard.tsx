@@ -19,8 +19,8 @@ interface propTypes {
  */
 export default function InfoCard(props: propTypes) {
   const styles = {
-    padding: "5px",
-    border: "2px black solid",
+    padding: "1rem",
+    border: "3px black solid",
     borderRadius: [
       props?.topLeft ? "3em" : "0.5em",
       props?.topRight ? "3em" : "0.5em",
