@@ -33,7 +33,8 @@ export default function NavBar() {
           variant="primary"
           sx={{
             backgroundColor: "#FF3225",
-            transform: "translateY(-2px)"
+            // Align text with rest of buttons, accounting for borders
+            transform: "translateY(-2px)",
           }}
         />
       </Box>
