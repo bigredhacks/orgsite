@@ -26,7 +26,7 @@ function FAQAccordion({ question, answer }: FAQAccordionPropTypes) {
   return (
       <Accordion sx={{
           backgroundColor: "#0E1116",
-          width: "70%",
+          width: "80%",
           margin: "auto",
           padding: 2,
           borderRadius: 5,
@@ -44,21 +44,6 @@ function FAQAccordion({ question, answer }: FAQAccordionPropTypes) {
           },
           '&.MuiAccordion-root': {
             borderRadius: 5, 
-          },
-          '& .MuiAccordionSummary-root': {
-            borderRadius: 5, 
-          },
-          '& .MuiAccordionDetails-root': {
-            borderRadius: '0 0 5px 5px', 
-          },
-          '&.Mui-expanded': {
-            margin: 'auto',
-            '& .MuiAccordionDetails-root': {
-              borderRadius: '0 0 5px 5px', // Maintain border radius on expansion
-            },
-          },
-          '&:before': {
-            display: 'none', 
           },
         }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}>
@@ -78,7 +63,6 @@ function FAQAccordion({ question, answer }: FAQAccordionPropTypes) {
       </Accordion>
   );
 }
-
 
 function FAQ() {
     return (
