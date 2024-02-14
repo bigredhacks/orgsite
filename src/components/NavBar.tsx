@@ -8,7 +8,7 @@ export default function NavBar() {
       id="navbar-wrapper"
       sx={{
         width: "100%",
-        position: "absolute",
+        position: "relative",
         top: "0px",
         right: "0px",
         paddingTop: "2rem",
