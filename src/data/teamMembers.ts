@@ -26,9 +26,82 @@ const teamMembers: Record<string, TeamsMemberProps[]> = {
       name: "Joseph",
     },
   ],
-  Software: [],
-  Design: [],
-  Sponsorship: [],
+  Software: [
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+  ],
+  Design: [
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+  ],
+  Sponsorship: [
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+    {
+      imgSrc: "/JosephYoo.jpg",
+      name: "Joseph",
+      position: "Lead",
+    },
+  ],
 };
 
 export default teamMembers;
