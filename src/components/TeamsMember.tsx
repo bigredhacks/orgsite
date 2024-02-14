@@ -4,11 +4,12 @@ export interface TeamsMemberProps {
   imgSrc: string;
   name: string;
   position?: string;
-  size: string;
+  size?: string;
 }
 
 export default function TeamsMember(props: TeamsMemberProps) {
-  const { imgSrc, name, position, size } = props;
+  const { imgSrc, name, position } = props;
+  const size = props.size ?? "inherit";
 
   return (
     <Box sx={{maxWidth: size, textAlign: "left"}}>
