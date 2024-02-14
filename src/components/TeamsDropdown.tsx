@@ -3,6 +3,8 @@ import InfoCard, { InfoCardProps, BorderSpec } from "./InfoCard";
 import TeamMemberList from "../components/TeamMemberList.tsx";
 import { useState } from "react";
 
+import "./TeamMemberList.css"
+
 export interface TeamsDropdownProps extends InfoCardProps {
   imgSrc: string;
   teamName: string;
@@ -58,7 +60,12 @@ export default function TeamsDropdown(props: TeamsDropdownProps) {
         </Box>
       </InfoCard>
 
-      {showMembers ? <TeamMemberList teamName={teamName} /> : <></>}
+      <Box
+        className={showMembers ? "dropdown revealed" : "dropdown"}
+        sx={{ overflow: "hidden" }}
+      >
+        <TeamMemberList teamName={teamName} />
+      </Box>
     </>
   );
 }
