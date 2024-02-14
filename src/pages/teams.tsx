@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import TeamsDropdown from "../components/TeamsDropdown";
 
-import teamsData from "../data/teams.ts";
+import teamsData from "../data/teamsData.ts";
 import TeamsMember from "../components/TeamsMember.tsx";
 
 export default function TeamsPage() {
@@ -22,7 +22,7 @@ export default function TeamsPage() {
             teamName,
             description,
             placeImgRight,
-            borderSpecList
+            borderSpecList,
           }) => (
             <>
               <TeamsDropdown
@@ -31,7 +31,7 @@ export default function TeamsPage() {
                 imgSrc={imgSrc}
                 teamName={teamName}
                 description={description}
-                {...{placeImgRight}}
+                {...{ placeImgRight }}
                 borderSpecList={borderSpecList}
               />
               {/* <TeamsMember
