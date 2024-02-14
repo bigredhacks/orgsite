@@ -1,16 +1,16 @@
 import { Box, Button, Typography } from "@mui/material";
-import InfoCard, { InfoCardProps } from "./InfoCard";
+import InfoCard, { InfoCardProps, BorderSpec } from "./InfoCard";
 
 export interface TeamsDropdownProps extends InfoCardProps {
   imgSrc: string;
   teamName: string;
   description: string;
   placeImgRight?: boolean;
+  borderSpecList?: BorderSpec[];
 }
 
 export default function TeamsDropdown(props: TeamsDropdownProps) {
-  const { sx, imgSrc, teamName, description, placeImgRight } = props;
-  const { topLeft, topRight, bottomLeft, bottomRight } = props;
+  const { sx, imgSrc, teamName, description, placeImgRight, borderSpecList } = props;
 
   // Change the order of text and image
   const flexDir = placeImgRight ? "row-reverse" : "row";
@@ -22,7 +22,7 @@ export default function TeamsDropdown(props: TeamsDropdownProps) {
         flexDirection: flexDir,
         ...sx,
       }}
-      {...{ topLeft, topRight, bottomLeft, bottomRight }}
+      borderSpecList={borderSpecList}
     >
       <Box sx={{ maxHeight: "fit-content" }}>
         {/* TODO: Mobile responsiveness is wack */}
