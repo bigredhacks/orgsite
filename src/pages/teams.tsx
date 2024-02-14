@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import TeamsDropdown, { TeamsDropdownProps } from "../components/TeamsDropdown";
 
+// TODO: Make this load in from JSON
 const teamsData: TeamsDropdownProps[] = [
   {
     sx: { backgroundColor: "#4361EE" },
@@ -16,7 +17,8 @@ const teamsData: TeamsDropdownProps[] = [
     teamName: "Software",
     description:
       "Our software developers make these website possible by implementing code.",
-    topRight: true
+    topRight: true,
+    placeImgRight: true
   },
   {
     sx: { backgroundColor: "#FF77BB" },
@@ -32,7 +34,8 @@ const teamsData: TeamsDropdownProps[] = [
     teamName: "Sponsorship",
     description:
       "This team reaches out to established companies, within and beyond the technology industry.",
-    topRight: true
+    topRight: true,
+    placeImgRight: true
   },
 ];
 
@@ -53,6 +56,7 @@ export default function TeamsPage() {
             imgSrc,
             teamName,
             description,
+            placeImgRight,
             topLeft,
             topRight,
             bottomLeft,
@@ -64,7 +68,7 @@ export default function TeamsPage() {
               imgSrc={imgSrc}
               teamName={teamName}
               description={description}
-              {...{ topLeft, topRight, bottomLeft, bottomRight }}
+              {...{ topLeft, topRight, bottomLeft, bottomRight, placeImgRight }}
             />
           )
         )}

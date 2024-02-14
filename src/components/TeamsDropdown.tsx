@@ -5,16 +5,21 @@ export interface TeamsDropdownProps extends InfoCardProps {
   imgSrc: string;
   teamName: string;
   description: string;
+  placeImgRight?: boolean;
 }
 
 export default function TeamsDropdown(props: TeamsDropdownProps) {
-  const { sx, imgSrc, teamName, description } = props;
+  const { sx, imgSrc, teamName, description, placeImgRight } = props;
   const { topLeft, topRight, bottomLeft, bottomRight } = props;
+
+  // Change the order of text and image
+  const flexDir = placeImgRight ? "row-reverse" : "row";
 
   return (
     <InfoCard
       sx={{
         display: "flex",
+        flexDirection: flexDir,
         ...sx,
       }}
       {...{ topLeft, topRight, bottomLeft, bottomRight }}
