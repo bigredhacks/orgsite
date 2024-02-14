@@ -21,7 +21,7 @@ export default function TeamsDropdown(props: TeamsDropdownProps) {
     >
       <Box sx={{ maxHeight: "fit-content" }}>
         {/* TODO: Mobile responsiveness is wack */}
-        <img src={imgSrc} style={{ maxHeight: "200px" }}></img>
+        <img src={imgSrc} style={{ maxHeight: "150px" }}></img>
       </Box>
       <Box sx={{ textAlign: "left" }}>
         <Button
