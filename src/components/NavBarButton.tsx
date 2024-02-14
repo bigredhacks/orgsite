@@ -18,10 +18,17 @@ export default function NavBarButton(props: propTypes) {
   const fixVariant: any = props.variant;
 
   return (
-    <Link to={"/" + (props.to ?? props.text.toLowerCase())}>
-      <Button variant={fixVariant} sx={props.sx}>
-        <Typography>{props.text}</Typography>
-      </Button>
-    </Link>
+    <Button
+      variant={fixVariant}
+      sx={{ blockSize: "fit-content", ...props.sx }}
+      disableRipple
+    >
+      <Link
+        to={"/" + (props.to ?? props.text.toLowerCase())}
+        style={{ color: "inherit" }}
+      >
+        <Typography sx={{ margin: 0 }}>{props.text}</Typography>
+      </Link>
+    </Button>
   );
 }
