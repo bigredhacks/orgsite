@@ -1,4 +1,4 @@
-import { Box, Button,  Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import InfoCard, { InfoCardProps } from "./InfoCard";
 
 export interface TeamsDropdownProps extends InfoCardProps {
@@ -9,7 +9,7 @@ export interface TeamsDropdownProps extends InfoCardProps {
 
 export default function TeamsDropdown(props: TeamsDropdownProps) {
   const { sx, imgSrc, teamName, description } = props;
-  const {topLeft, topRight, bottomLeft, bottomRight} = props;
+  const { topLeft, topRight, bottomLeft, bottomRight } = props;
 
   return (
     <InfoCard
@@ -17,7 +17,7 @@ export default function TeamsDropdown(props: TeamsDropdownProps) {
         display: "flex",
         ...sx,
       }}
-      {...{topLeft, topRight, bottomLeft, bottomRight}}
+      {...{ topLeft, topRight, bottomLeft, bottomRight }}
     >
       <Box sx={{ maxHeight: "fit-content" }}>
         {/* TODO: Mobile responsiveness is wack */}
@@ -26,7 +26,12 @@ export default function TeamsDropdown(props: TeamsDropdownProps) {
       <Box sx={{ textAlign: "left" }}>
         <Button
           variant="primary"
-          sx={{ backgroundColor: "white", width: "50%", marginBottom: "1rem" }}
+          sx={{
+            backgroundColor: "white",
+            "&:hover": { backgroundColor: "white" },
+            width: "50%",
+            marginBottom: "1rem",
+          }}
         >
           <Typography>{teamName}</Typography>
         </Button>

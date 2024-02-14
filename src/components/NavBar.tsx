@@ -24,15 +24,15 @@ export default function NavBar() {
           justifyContent: "end",
         }}
       >
-        <NavBarButton text="Teams" variant="secondary" />
-        <NavBarButton text="Events" variant="secondary" />
-        <NavBarButton text="FAQ" variant="secondary" />
-        <NavBarButton text="Sponsors" variant="secondary" />
+        <NavBarButton bg="none" text="Teams" variant="secondary" />
+        <NavBarButton bg="none" text="Events" variant="secondary" />
+        <NavBarButton bg="none" text="FAQ" variant="secondary" />
+        <NavBarButton bg="none" text="Sponsors" variant="secondary" />
         <NavBarButton
+          bg="#FF3225"
           text="Apply"
           variant="primary"
           sx={{
-            backgroundColor: "#FF3225",
             // Align text with rest of buttons, accounting for borders
             transform: "translateY(-2px)",
           }}

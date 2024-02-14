@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export interface NavBarButtonProps {
   variant: string;
+  bg: string;
   text: string;
   to?: string;
   sx?: SxProps<Theme>;
@@ -20,7 +21,12 @@ export default function NavBarButton(props: NavBarButtonProps) {
   return (
     <Button
       variant={fixVariant}
-      sx={{ blockSize: "fit-content", ...props.sx }}
+      sx={{
+        blockSize: "fit-content",
+        backgroundColor: props.bg,
+        "&:hover": { backgroundColor: props.bg },
+        ...props.sx,
+      }}
       disableRipple
     >
       <Link
