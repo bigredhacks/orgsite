@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import InfoCard, { InfoCardProps, BorderSpec } from "./InfoCard";
+import React from "react";
 
 export interface TeamsDropdownProps extends InfoCardProps {
   imgSrc: string;
@@ -9,8 +10,14 @@ export interface TeamsDropdownProps extends InfoCardProps {
   borderSpecList?: BorderSpec[];
 }
 
-export default function TeamsDropdown(props: TeamsDropdownProps) {
-  const { sx, imgSrc, teamName, description, placeImgRight, borderSpecList } = props;
+export interface TeamsDropdownPropsClickable extends TeamsDropdownProps {
+  memberState: [boolean, React.Dispatch<React.SetStateAction<boolean>>];
+}
+
+export default function TeamsDropdown(props: TeamsDropdownPropsClickable) {
+  const { sx, imgSrc, teamName, description, placeImgRight, borderSpecList } =
+    props;
+  const [showMembers, setShowMembers] = props.memberState;
 
   // Change the order of text and image
   const flexDir = placeImgRight ? "row-reverse" : "row";
@@ -41,7 +48,11 @@ export default function TeamsDropdown(props: TeamsDropdownProps) {
           <Typography>{teamName}</Typography>
         </Button>
         <Typography>{description}</Typography>
-        <Button variant="secondary" sx={{ px: "0" }}>
+        <Button
+          variant="secondary"
+          sx={{ px: "0" }}
+          onClick={() => setShowMembers(!showMembers)}
+        >
           <Typography style={{ textDecoration: "underline" }}>
             Click here to meet the {teamName} team &#x25BC;
           </Typography>
