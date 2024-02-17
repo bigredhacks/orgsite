@@ -1,0 +1,10 @@
+.dropdown {
+  max-height: 0vh;
+  transition-delay: 0ms;
+  transition: max-height 0.5s ease-in;
+}
+
+.revealed {
+  max-height: 100vh;
+  transition: max-height 0.5s ease-in;
+}
