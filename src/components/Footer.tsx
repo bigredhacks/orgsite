@@ -30,16 +30,6 @@ const Footer = () => {
               <InstagramIcon sx={{ color: 'white', fontSize: '25px' }} />
             </a>
           </IconButton>
-          <IconButton aria-label="Facebook">
-            <a href="https://www.facebook.com/bigredhacks/" target="_blank" rel="noopener noreferrer">
-              <FacebookIcon sx={{ color: 'white', fontSize: '25px' }} />
-            </a>
-          </IconButton>
-          <IconButton aria-label="X">
-            <a href="https://twitter.com/BigRedHacks" target="_blank" rel="noopener noreferrer">
-              <XIcon sx={{ color: 'white', fontSize: '25px' }} />
-            </a>
-          </IconButton>
           <IconButton aria-label="LinkedIn">
             <a href="https://www.linkedin.com/in/bigred-hacks-698107269" target="_blank" rel="noopener noreferrer">
               <LinkedInIcon sx={{ color: 'white', fontSize: '25px' }} />
