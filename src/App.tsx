@@ -12,14 +12,14 @@ function App() {
   return (
     <>
       <main>
-        <NavBar />
+        <NavBar/>
         <Routes>
+          <Route path="/teams" element={<TeamsPage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/sponsors" element={<SponsorsPage />} />
+          <Route path="/apply" element={<ApplyPage />} />
           <Route path="/" element={<HomePage />} />
-          <Route path="team" element={<TeamsPage />} />
-          <Route path="faq" element={<FAQPage />} />
-          <Route path="events" element={<EventsPage />} />
-          <Route path="sponsors" element={<SponsorsPage />} />
-          <Route path="apply" element={<ApplyPage />} />
         </Routes>
       </main>
     </>
