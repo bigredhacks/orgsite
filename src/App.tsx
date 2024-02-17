@@ -12,8 +12,7 @@ function App() {
   return (
     <>
       <main>
-        <NavBar />
-        <FAQPage/>
+        <NavBar/>
         <Routes>
           <Route path="/teams" element={<TeamsPage />} />
           <Route path="/faq" element={<FAQPage />} />
