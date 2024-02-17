@@ -12,25 +12,19 @@ export default function Events() {
     { mt: 3 } :
     {};
   return (
-    <Card
-      sx={cardStyle}
-      id="events"
-    >
-      <Typography style={{fontSize: '50px', textAlign: 'center', paddingTop: '100  px', lineHeight: '79.5px'}} fontWeight={400} color="black" sx={typographyStyle}>
-        Events
-      </Typography>
-      <Grid container spacing={5} justifyContent="center" sx={{ mt: -1 }}>
+      <><Typography style={{ fontSize: '50px', textAlign: 'center', paddingTop: '100px', lineHeight: '79.5px' }} fontWeight={400} color="black" sx={typographyStyle}>
+      events
+    </Typography><Grid container spacing={5} justifyContent="center" sx={{ mt: -1 }}>
 
-        <Grid item lg={4} sm={3.8}>
+        <Grid item lg={3} sm={4}>
           <EventPhoto img={event2017} year="Upcomming" date="March 9th/10th"></EventPhoto>
         </Grid>
-        <Grid item lg={4} sm={3.8}>
-          <EventPhoto img={event2021} year="2021" date="Space" url="https://fantastic-kheer-738e55.netlify.app/" ></EventPhoto>
+        <Grid item lg={3} sm={4}>
+          <EventPhoto img={event2021} year="2021" date="Space" url="https://fantastic-kheer-738e55.netlify.app/"></EventPhoto>
         </Grid>
-        <Grid item lg={4} sm={3.8}>
+        <Grid item lg={3} sm={4}>
           <EventPhoto img={event2019} year="2019" date="Theme"></EventPhoto>
         </Grid>
-      </Grid>
-    </Card >
+      </Grid></>
   )
 }

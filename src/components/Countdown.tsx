@@ -1,6 +1,8 @@
 import React from 'react';
 import useCountdown from '../hooks/useCountdown'
 import DateTimeDisplay from './DateTimeDisplay'
+import { Card, Typography, Grid, Box } from '@mui/material';
+
 
 const HackathonStarted = () => {
   return (
@@ -20,12 +22,35 @@ export type dateInfo = {
 
 const ShowCounter = ({days, hours, minutes, seconds}: dateInfo) => {
   return (
-    <div>
-      <DateTimeDisplay value={days} type={'Days'} />
-      <DateTimeDisplay value={hours} type={'Hours'} />
-      <DateTimeDisplay value={minutes} type={'Minutes'} />
-      <DateTimeDisplay value={seconds} type={'Seconds'} />
-    </div>
+      <><Typography style={{
+      fontSize: '50px', textAlign: 'center',
+      paddingTop: '100px', lineHeight: '79.5px',
+      paddingBottom: '50px'
+    }} fontWeight={400} color="black">
+      countdown
+    </Typography><Box component="section" sx={{
+      width: '930px',
+      height: '268.33px',
+      borderRadius: '70px',
+      bgcolor: '#EEFD63',
+      display: 'flex',
+      margin: 'auto'
+    }}>
+        <Grid container spacing={2} justifyContent="center" sx={{ mt: -1 }}>
+          <Grid item lg={2.5} sm={5}>
+            <DateTimeDisplay value={days} type={'days'} />
+          </Grid>
+          <Grid item lg={2.5} sm={5}>
+            <DateTimeDisplay value={hours} type={'hours'} />
+          </Grid>
+          <Grid item lg={2.5} sm={5}>
+            <DateTimeDisplay value={minutes} type={'mins'} />
+          </Grid>
+          <Grid item lg={2.5} sm={5}>
+            <DateTimeDisplay value={seconds} type={'sec'} />
+          </Grid>
+        </Grid>
+      </Box></>
   )
 }
 
@@ -39,10 +64,10 @@ const CountdownTimer = ({targetDate} : countdownTimerProp) => {
   } else {
     return (
       <ShowCounter
-      days={days}
-      hours={hours}
-      minutes={minutes}
-      seconds={seconds} />
+          days={days}
+          hours={hours}
+          minutes={minutes}
+          seconds={seconds} />
     )
   }
 }
