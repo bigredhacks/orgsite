@@ -13,6 +13,7 @@ function App() {
     <>
       <main>
         <NavBar />
+        <FAQPage/>
         <Routes>
           <Route path="/teams" element={<TeamsPage />} />
           <Route path="/faq" element={<FAQPage />} />
