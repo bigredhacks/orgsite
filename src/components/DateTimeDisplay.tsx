@@ -1,22 +1,20 @@
-import React from 'react';
-import { Typography } from '@mui/material';
-
+import React from "react";
+import { Box, Typography } from "@mui/material";
 
 export type dateTimeType = {
-  value: number,
-  type: string
-}
+  value: number;
+  type: string;
+};
 
-const DateTimeDisplay = ({value, type}: dateTimeType) => {
-return (
-  <>
-  <Typography style={{ fontSize: '70px', textAlign: 'center', paddingTop: '50px', lineHeight: '85px'}} fontWeight={600} color="black">
-    {value}
-  </Typography><Typography style={{ fontSize: '40px', textAlign: 'center', paddingTop: '5px' }} fontWeight={600} color="black">
-      {type}
-    </Typography>
-  </>
-)
-}
+const DateTimeDisplay = ({ value, type }: dateTimeType) => {
+  return (
+    <Box sx={{ textAlign: "center" }}>
+      <Typography sx={{ fontSize: "70px" }} fontWeight={600}>
+        {String(value).padStart(2, "0")}
+      </Typography>
+      <Typography sx={{ fontSize: "40px" }} fontWeight={600}>{type}</Typography>
+    </Box>
+  );
+};
 
 export default DateTimeDisplay;

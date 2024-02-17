@@ -1,7 +1,7 @@
 import React from "react";
 import useCountdown from "../hooks/useCountdown";
 import DateTimeDisplay from "./DateTimeDisplay";
-import { Card, Typography, Grid, Box } from "@mui/material";
+import { Typography, Grid, Box } from "@mui/material";
 
 const HackathonStarted = () => {
   return (
@@ -23,12 +23,11 @@ const ShowCounter = ({ days, hours, minutes, seconds }: dateInfo) => {
   return (
     <>
       <Typography
-        style={{
+        sx={{
           fontSize: "50px",
           textAlign: "center",
-          paddingTop: "100px",
           lineHeight: "79.5px",
-          paddingBottom: "50px",
+          mb: 4,
         }}
         fontWeight={400}
         color="black"
@@ -39,14 +38,14 @@ const ShowCounter = ({ days, hours, minutes, seconds }: dateInfo) => {
         component="section"
         sx={{
           width: "60%",
-          height: "268.33px",
           borderRadius: "70px",
           bgcolor: "#EEFD63",
           display: "flex",
           margin: "auto",
+          padding: 7,
         }}
       >
-        <Grid container spacing={2} justifyContent="center" sx={{ mt: -1 }}>
+        <Grid container spacing={2} justifyContent="center">
           <Grid item lg={2.5} sm={5}>
             <DateTimeDisplay value={days} type={"days"} />
           </Grid>
