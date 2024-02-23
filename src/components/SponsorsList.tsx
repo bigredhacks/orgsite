@@ -13,10 +13,9 @@ export default function SponsorsList({ numColumns = 3 }: SponsorsListProps) {
     <Box sx={{
       display: 'grid',
       gridTemplateColumns: `repeat(${numColumns}, 1fr)`,
-      justifyItems: 'center', // This centers the items in the grid
-      alignItems: 'center', // This centers the items vertically
-      gridRowGap: 32, // Decrease the gap to make items closer to each other
-      // You can also use theme spacing for consistency, e.g., theme.spacing(1)
+      justifyItems: 'center', 
+      alignItems: 'center', 
+      gridRowGap: 32, 
     }}>
       {sponsorArray.map((sponsor: SponsorsMemberProps, index: number) => (
         <SponsorsMember key={index} {...sponsor} />
