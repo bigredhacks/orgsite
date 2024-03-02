@@ -1,7 +1,8 @@
-import React from "react";
 import useCountdown from "../hooks/useCountdown";
 import DateTimeDisplay from "./DateTimeDisplay";
 import { Typography, Grid, Box } from "@mui/material";
+import "@fontsource/inter"; 
+import "@fontsource/museomoderno";
 
 const HackathonStarted = () => {
   return (
@@ -24,6 +25,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }: dateInfo) => {
     <>
       <Typography
         sx={{
+          fontFamily: 'MuseoModerno, sans-serif',
           fontSize: "50px",
           textAlign: "center",
           lineHeight: "79.5px",

@@ -3,6 +3,8 @@ import { EventPhoto } from './EventPhoto';
 import event2019 from "../assets/org-2019.jpg"
 import event2021 from "../assets/org-2018.jpeg"
 import event2017 from "../assets/org-2017.jpeg"
+import "@fontsource/inter"; 
+import "@fontsource/museomoderno";
 
 export default function Events() {
   const theme = useTheme();
@@ -12,7 +14,7 @@ export default function Events() {
     { mt: 3 } :
     {};
   return (
-      <><Typography style={{ fontSize: '50px', textAlign: 'center', paddingTop: '100px', lineHeight: '79.5px' }} fontWeight={400} color="black" sx={typographyStyle}>
+      <><Typography style={{ fontSize: '50px', textAlign: 'center', paddingTop: '100px', lineHeight: '79.5px', fontFamily: 'MuseoModerno, sans-serif' }} fontWeight={400} color="black" sx={typographyStyle}>
       events
     </Typography><Grid container spacing={5} justifyContent="center" sx={{ mt: -1 }}>
 
