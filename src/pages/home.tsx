@@ -1,3 +1,4 @@
+import Countdown from "../components/Countdown";
 import { Hero } from "../components/Hero";
 import FAQPage from "../pages/faq"
 import SponsorsPage from "../pages/sponsors"
