@@ -1,4 +1,4 @@
-import { Accordion, AccordionSummary, AccordionDetails, Typography, Stack, Card, useTheme, useMediaQuery } from '@mui/material/';
+import { Accordion, AccordionSummary, AccordionDetails, Typography, Stack, Card } from '@mui/material/';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import "@fontsource/inter"; 
 import "@fontsource/museomoderno";
