@@ -11,7 +11,7 @@ export default function HomePage() {
   <EventsPage></EventsPage>
   <FAQPage></FAQPage>
   <SponsorsPage></SponsorsPage>
-  <Countdown targetDate={0o03022024}></Countdown>
+  <Countdown targetDate={1709960400000}></Countdown>
   </>
   )
 }
