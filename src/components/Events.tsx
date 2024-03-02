@@ -19,7 +19,7 @@ export default function Events() {
     </Typography><Grid container spacing={5} justifyContent="center" sx={{ mt: -1 }}>
 
         <Grid item lg={3} sm={4}>
-          <EventPhoto img={event2017} year="Upcomming" date="March 9th/10th"></EventPhoto>
+          <EventPhoto img={event2017} year="Upcoming" date="March 9th/10th"></EventPhoto>
         </Grid>
         <Grid item lg={3} sm={4}>
           <EventPhoto img={event2021} year="2021" date="Space" url="https://fantastic-kheer-738e55.netlify.app/"></EventPhoto>
