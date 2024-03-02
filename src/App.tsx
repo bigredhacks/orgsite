@@ -7,6 +7,7 @@ import FAQPage from "./pages/faq";
 import SponsorsPage from "./pages/sponsors";
 import ApplyPage from "./pages/apply";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/apply" element={<ApplyPage />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
+        <Footer />
       </main>
     </>
   );
