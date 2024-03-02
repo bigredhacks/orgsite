@@ -44,6 +44,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }: dateInfo) => {
           bgcolor: "#EEFD63",
           display: "flex",
           margin: "auto",
+          mb:4,
           padding: 7,
         }}
       >
