@@ -1,5 +1,5 @@
 import SponsorsMember, { SponsorsMemberProps } from './SponsorsMember';
-import { Box } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import sponsors from '../data/sponsors';
 
 export interface SponsorsListProps {
@@ -13,6 +13,7 @@ export default function SponsorsList({ numColumns = 3 }: SponsorsListProps) {
     <Box sx={{
       display: 'grid',
       gridTemplateColumns: `repeat(${numColumns}, 1fr)`,
+      gridTemplateRows: 'auto',
       justifyItems: 'center', 
       alignItems: 'center', 
       gridRowGap: 32, 

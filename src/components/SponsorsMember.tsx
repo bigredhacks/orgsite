@@ -12,7 +12,7 @@ export default function SponsorsMember(props: SponsorsMemberProps) {
 
   return (
     <Box sx={{ maxWidth: size, textAlign: "center", margin: 5 }}>
-      <img src={imgSrc} style={{ width: "100%", height: "100%" }} alt={name} />
+      <img src={imgSrc} style={{ width: "100%", height: "100%", maxHeight:"100px" }} alt={name} />
       <Typography sx={{ mt: "5px" }}>{name}</Typography>
     </Box>
   );

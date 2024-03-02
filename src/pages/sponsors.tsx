@@ -18,9 +18,8 @@ export default function SponsorsPage() {
   return (
     <Box
       sx={{
-        backgroundColor: "#22262C",
-        color: "white",
-        padding: 10,
+        color: "#22262C",
+        padding: 12,
         textAlign: "center",
       }}
     >
