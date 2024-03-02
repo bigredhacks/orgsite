@@ -22,7 +22,7 @@ export default function SponsorsPage() {
         <Typography variant="body1" sx={{ marginBottom: 3, fontFamily: "inter"}}>
           Nothing would be possible without the support of our sponsors.
         </Typography>
-        <SponsorsList category="MainSponsors" numColumns={3} />
+        <SponsorsList  numColumns={3} />
         <Typography variant="body1" sx={{ marginTop: 3 , fontFamily: "inter"}}>
           Interested in sponsoring BigRedHacks 2023?
         </Typography>
