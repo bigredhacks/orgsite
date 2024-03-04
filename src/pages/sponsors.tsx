@@ -13,7 +13,7 @@ export default function SponsorsPage() {
     "#4B0082",
     "#9400D3",
   ];
-  const letters = "partners".split("");
+  const letters = "past partners".split("");
 
   return (
     <Box
@@ -39,7 +39,7 @@ export default function SponsorsPage() {
       </Typography>
       <SponsorsList numColumns={3} />
       <Typography variant="body1" sx={{ marginTop: 3, fontFamily: "inter" }}>
-        Interested in sponsoring BigRedHacks 2023?
+        Interested in sponsoring BigRed//Hacks 2024?
       </Typography>
       <Typography variant="body1" sx={{ fontFamily: "inter" }}>
         Email us at bigredhacks@cornell.edu!
