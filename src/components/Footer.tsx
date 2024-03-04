@@ -30,7 +30,7 @@ const Footer = () => {
             </a>
           </IconButton>
           <IconButton aria-label="LinkedIn">
-            <a href="https://www.linkedin.com/in/bigred-hacks-698107269" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/bigredhacks/mycompany/" target="_blank" rel="noopener noreferrer">
               <LinkedInIcon sx={{ color: 'white', fontSize: '25px' }} />
             </a>
           </IconButton>
