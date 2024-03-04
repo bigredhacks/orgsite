@@ -1,4 +1,4 @@
-import { Accordion, AccordionSummary, AccordionDetails, Typography, Stack, Card } from '@mui/material/';
+import { Accordion, AccordionSummary, AccordionDetails, Typography, Stack, Card, Box} from '@mui/material/';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import "@fontsource/inter"; 
 import "@fontsource/museomoderno";
@@ -25,38 +25,42 @@ const FAQS = [
 function FAQAccordion({ question, answer }: FAQAccordionPropTypes) {
   return (
       <Accordion sx={{
-          backgroundColor: "#0E1116",
+          backgroundColor: "white",
           width: "80%",
-          margin: "auto",
-          padding: 2,
+          margin: "2px",
+          padding: 0.5,
+          paddingBottom: 0,
           borderRadius: 5,
           color: "white", 
-          border: "5px solid white",
           mb: 2, 
           '&:hover': {
-              borderColor: '#FF77BB', 
-              '.MuiTypography-root': { // text on hover
-                  color: '#FF77BB',
-              },
-              '.MuiSvgIcon-root': { //icon color on hover
-                  color: '#FF77BB',
-              }
+              backgroundColor: '#FF77BB',
           },
           '&.MuiAccordion-root': {
             borderRadius: 5, 
           },
         }}>
-          <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}>
+        <Box sx={{backgroundColor: "#0E1116", borderRadius: 5, padding: 2, marginBottom: 0.5, '&:hover': {
+            '.MuiTypography-root': { // text on hover
+              color: '#FF77BB',
+            },
+            '.MuiSvgIcon-root': { //icon color on hover
+                color: '#FF77BB',
+            },},}}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: 'white'}} />}>
+
             <Typography sx={{ 
                 fontFamily: 'Inter, sans-serif', 
                 borderRadius: 5, 
                 color: 'inherit',
+                textAlign: "left",
              }}>
               {question}
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
-              <Typography sx={{ color: "white", textAlign: "left" }}>
+          </Box>
+          <AccordionDetails >
+              <Typography sx={{ color: "black", textAlign: "left", paddingTop: 2, paddingBottom: 2, "&.MuiTypography-root": { color: "black" }}}>
                   {answer}
               </Typography>
           </AccordionDetails>
