@@ -22,18 +22,17 @@ export default function UprightTeamsDropdown(props: UprightTeamsDropdownProps) {
             width: "30vw",
             minHeight: "20vw",
             flexDirection: "column",
+            height: "calc(100% - 5vw)",
             ...sx,
           }}
           borderSpecList={borderSpecList}
         >
-          <Box
-            sx={{ maxHeight: "fit-content", marginTop: "-100px" }}
-          >
+          <Box sx={{ maxHeight: "fit-content", marginTop: "-11vw" }}>
             {/* TODO: Mobile responsiveness is wack */}
             <img
               src={imgSrc}
               style={{
-                maxHeight: "150px",
+                maxWidth: "20vw",
               }}
             ></img>
           </Box>
@@ -44,11 +43,11 @@ export default function UprightTeamsDropdown(props: UprightTeamsDropdownProps) {
               sx={{
                 backgroundColor: "white",
                 "&:hover": { backgroundColor: "white" },
-                width: "50%",
+                width: "90%",
                 marginBottom: "1rem",
               }}
             >
-              <Typography>{teamName}</Typography>
+              <Typography sx={{ fontWeight: "bold" }}>{teamName}</Typography>
             </Button>
             <Typography>{description}</Typography>
           </Box>

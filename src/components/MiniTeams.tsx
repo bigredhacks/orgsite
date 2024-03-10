@@ -8,12 +8,12 @@ export default function MiniTeams() {
   return (
     <>
       <Box sx={{
-        marginTop: "3em",
+        marginTop: "10vw",
         display: "grid",
         gridTemplateColumns: "6fr 6fr",
         gridColumnGap: "1em",
-        gridRowGap: "5em",
-        px: "1em"
+        gridRowGap: "10vw",
+        px: "10vw"
        }}>
         {teamsData.map((props) => (
           <UprightTeamsDropdown {...props} />
