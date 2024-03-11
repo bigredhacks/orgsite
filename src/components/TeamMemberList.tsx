@@ -22,6 +22,7 @@ export default function TeamMemberList(props: TeamMemberListProps) {
         ...sx
       }}>
         {teamMembers[teamName].map((props2) => (
+          
           <TeamsMember {...props2} />
         ))}
       </Box>

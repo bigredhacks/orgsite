@@ -3,103 +3,131 @@ import { TeamsMemberProps } from "../components/TeamsMember";
 const teamMembers: Record<string, TeamsMemberProps[]> = {
   Logistics: [
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
+      imgSrc: "/dist/headshots/YukiSuwabe.jpg",
+      name: "Yuki Suwabe",
       position: "Lead",
     },
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
+      imgSrc: "/dist/headshots/JosephYoo.jpg",
+      name: "Joseph Yoo",
       position: "Lead",
     },
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
-      position: "Lead",
+      imgSrc: "/placeholder.png",
+      name: "Vicki Yang",
+      position: "Social Chair",
     },
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
+      imgSrc: "/placeholder.png",
+      name: "Neha Sunkara",
     },
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
+      imgSrc: "/placeholder.png",
+      name: "Anna Zweck-Bronner",
+    },
+    {
+      imgSrc: "/dist/headshots//SamShridhar.jpeg",
+      name: "Samarth Shridhar",
+    },
+    {
+      imgSrc: "/dist/headshots/TinaChen.jpg",
+      name: "Tina Chen",
     },
   ],
   Software: [
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
+      imgSrc: "/placeholder.png",
+      name: "Richard Kim",
       position: "Lead",
     },
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
+      imgSrc: "/placeholder.png",
+      name: "Kelly Yu",
       position: "Lead",
     },
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
+      imgSrc: "/placeholder.png",
+      name: "Colin Wu",
       position: "Lead",
+    },
+    {
+      imgSrc: "/dist/headshots/EvanZhu.jpeg",
+      name: "Evan Zhu",
+    },
+    {
+      imgSrc: "/placeholder.png",
+      name: "Lisel Wong",
+    },
+    {
+      imgSrc: "/placeholder.png",
+      name: "Claiire Wang",
+    },
+    {
+      imgSrc: "/placeholder.png",
+      name: "Jeffrey Huang",
     },
   ],
   Design: [
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
+      imgSrc: "/dist/headshots/ShaniaCabrera.png",
+      name: "Shania Cabrera",
       position: "Lead",
     },
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
+      imgSrc: "/placeholder.png",
+      name: "Daniella Xu",
       position: "Lead",
     },
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
-      position: "Lead",
+      imgSrc: "/placeholder.png",
+      name: "Kate Zheng",
     },
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
-      position: "Lead",
+      imgSrc: "/placeholder.png",
+      name: "Althea Bata",
     },
-    {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
-      position: "Lead",
-    },
-    {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
-      position: "Lead",
-    },
-    {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
-      position: "Lead",
-    },
-    {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
-      position: "Lead",
-    },
-    {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
-      position: "Lead",
-    },
+    // {
+    //   imgSrc: "/placeholder.png",
+    //   name: "Joseph",
+    //   position: "Lead",
+    // },
+    // {
+    //   imgSrc: "/placeholder.png",
+    //   name: "Joseph",
+    //   position: "Lead",
+    // },
+    // {
+    //   imgSrc: "/placeholder.png",
+    //   name: "Joseph",
+    //   position: "Lead",
+    // },
+    // {
+    //   imgSrc: "/placeholder.png",
+    //   name: "Joseph",
+    //   position: "Lead",
+    // },
+    // {
+    //   imgSrc: "/placeholder.png",
+    //   name: "Joseph",
+    //   position: "Lead",
+    // },
   ],
   Sponsorship: [
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
-      position: "Lead",
+      imgSrc: "/placeholder.png",
+      name: "Althea Bata",
     },
     {
-      imgSrc: "/JosephYoo.jpg",
-      name: "Joseph",
-      position: "Lead",
+      imgSrc: "/placeholder.png",
+      name: "Caroline Zhu",
+    },
+    {
+      imgSrc: "/placeholder.png",
+      name: "Parker Rho",
+    },
+    {
+      imgSrc: "/dist/headshots/AfsheenAlvi.jpeg",
+      name: "Afsheen Alvi",
     },
   ],
 };
