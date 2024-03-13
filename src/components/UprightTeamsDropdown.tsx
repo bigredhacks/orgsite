@@ -22,7 +22,7 @@ export default function UprightTeamsDropdown(props: UprightTeamsDropdownProps) {
             width: "30vw",
             minHeight: "20vw",
             flexDirection: "column",
-            height: "calc(100% - 5vw)",
+            height: "calc(100% - 2vw)",
             ...sx,
           }}
           borderSpecList={borderSpecList}
@@ -47,9 +47,9 @@ export default function UprightTeamsDropdown(props: UprightTeamsDropdownProps) {
                 marginBottom: "1rem",
               }}
             >
-              <Typography sx={{ fontWeight: "bold" }}>{teamName}</Typography>
+              <Typography sx={{ fontWeight: "bold", fontfamily: "inter" }}>{teamName}</Typography>
             </Button>
-            <Typography>{description}</Typography>
+            <Typography sx={{fontfamily: "inter"}}>{description}</Typography>
           </Box>
         </InfoCard>
       </Box>

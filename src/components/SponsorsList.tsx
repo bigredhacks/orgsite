@@ -1,5 +1,5 @@
 import SponsorsMember, { SponsorsMemberProps } from './SponsorsMember';
-import { Box, Grid } from '@mui/material';
+import { Box } from '@mui/material';
 import sponsors from '../data/sponsors';
 
 export interface SponsorsListProps {

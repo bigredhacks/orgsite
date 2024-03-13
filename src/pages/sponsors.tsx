@@ -7,8 +7,8 @@ export default function SponsorsPage() {
   const rainbowColors = [
     "#FF0000",
     "#FF7F00",
-    "#FFFF00",
-    "#00FF00",
+    "#FFD700",
+    "#77dd77",
     "#0000FF",
     "#4B0082",
     "#9400D3",

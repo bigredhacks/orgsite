@@ -9,22 +9,26 @@ export interface TeamsMemberProps {
 
 export default function TeamsMember(props: TeamsMemberProps) {
   const { imgSrc, name, position } = props;
-  const size = props.size ?? "inherit";
+  // const size = props.size ?? "inherit";
 
   return (
-    <Box sx={{maxWidth: size, textAlign: "left"}}>
+    <Box sx={{maxWidth: "150px", textAlign: "left"}}>
       <Card
         style={{
           borderRadius: "20%",
           border: "2px #4361EE solid",
-          width: size,
-          height: size
+          width: '150px', 
+          height: '200px',
+          overflow: "hidden",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
         <img src={imgSrc} style={{width: "100%", height: "100%"}} />
       </Card>
-      <Typography sx={{fontWeight: "bold", mt: "5px"}}>{name}</Typography>
-      <Typography>{position}</Typography>
+      <Typography sx={{ fontWeight: "bold", mt: "5px", ml: "5px" }}>{name}</Typography>
+      <Typography sx={{ ml: "5px" }}> {position}</Typography>
     </Box>
   );
 }

@@ -3,12 +3,13 @@ import { TeamsMemberProps } from "../components/TeamsMember";
 const teamMembers: Record<string, TeamsMemberProps[]> = {
   Logistics: [
     {
-      imgSrc: "/dist/headshots/YukiSuwabe.jpg",
+      // imgSrc: "/team-members/YukiSuwabe.jpg",
+      imgSrc: "/placeholder.png",
       name: "Yuki Suwabe",
       position: "Lead",
     },
     {
-      imgSrc: "/dist/headshots/JosephYoo.jpg",
+      imgSrc: "/team-members/JosephYoo.jpg",
       name: "Joseph Yoo",
       position: "Lead",
     },
@@ -26,11 +27,11 @@ const teamMembers: Record<string, TeamsMemberProps[]> = {
       name: "Anna Zweck-Bronner",
     },
     {
-      imgSrc: "/dist/headshots//SamShridhar.jpeg",
+      imgSrc: "/team-members/SamShridhar.jpeg",
       name: "Samarth Shridhar",
     },
     {
-      imgSrc: "/dist/headshots/TinaChen.jpg",
+      imgSrc: "/team-members/TinaChen.jpg",
       name: "Tina Chen",
     },
   ],
@@ -38,7 +39,7 @@ const teamMembers: Record<string, TeamsMemberProps[]> = {
     {
       imgSrc: "/placeholder.png",
       name: "Richard Kim",
-      position: "Lead",
+      position: "Advisor",
     },
     {
       imgSrc: "/placeholder.png",
@@ -51,7 +52,7 @@ const teamMembers: Record<string, TeamsMemberProps[]> = {
       position: "Lead",
     },
     {
-      imgSrc: "/dist/headshots/EvanZhu.jpeg",
+      imgSrc: "/team-members/EvanZhu.jpeg",
       name: "Evan Zhu",
     },
     {
@@ -69,7 +70,8 @@ const teamMembers: Record<string, TeamsMemberProps[]> = {
   ],
   Design: [
     {
-      imgSrc: "/dist/headshots/ShaniaCabrera.png",
+      // imgSrc: "/public/team-members/ShaniaCabrera.jpeg",
+      imgSrc: "/placeholder.png",
       name: "Shania Cabrera",
       position: "Lead",
     },
@@ -126,7 +128,8 @@ const teamMembers: Record<string, TeamsMemberProps[]> = {
       name: "Parker Rho",
     },
     {
-      imgSrc: "/dist/headshots/AfsheenAlvi.jpeg",
+      // imgSrc: "/public/team-members/AfsheenAlvi.jpeg",
+      imgSrc: "/placeholder.png",
       name: "Afsheen Alvi",
     },
   ],

@@ -9,7 +9,7 @@ import { EventPhoto } from "./EventPhoto";
 export default function Events() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const cardStyle = isMobile;
+  // const cardStyle = isMobile;
   const typographyStyle = isMobile ? { mt: 3 } : {};
   return (
     <>

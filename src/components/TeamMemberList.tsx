@@ -17,8 +17,11 @@ export default function TeamMemberList(props: TeamMemberListProps) {
     <>
       <Box sx={{
         display: "grid",
-        gridTemplateColumns: `repeat(${numElements}, auto)`,
-        columnGap: "1em",
+        gridTemplateColumns: `repeat(${numElements}, 1fr)`,
+        gridAutoRows: '1fr',
+        gap: "5px",
+        alignItems: "start",
+        justifyItems: "center", 
         ...sx
       }}>
         {teamMembers[teamName].map((props2) => (

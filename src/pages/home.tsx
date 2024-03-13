@@ -1,4 +1,4 @@
-import Countdown from "../components/Countdown";
+// import Countdown from "../components/Countdown";
 import { Hero } from "../components/Hero";
 import MiniTeams from "../components/MiniTeams";
 import FAQPage from "../pages/faq"
@@ -13,7 +13,7 @@ export default function HomePage() {
   <EventsPage></EventsPage>
   <FAQPage></FAQPage>
   <SponsorsPage></SponsorsPage>
-  <Countdown targetDate={1709960400000}></Countdown>
+  {/* <Countdown targetDate={1709960400000}></Countdown> */}
   </>
   )
 }

@@ -19,6 +19,10 @@ const FAQS = [
     {
         "Q": "I have a concern or question that is not answered in your FAQs, what should I do?",
         "A": "You can contact us at our email bigredhacks@cornell.edu or fill in the form on the Contact Us page!"
+    },
+    {
+        "Q": "Who can attend our Hackathons?",
+        "A": "Everyone (over 18), regardless of their education level, is invited to participate in our Hackathons!"
     }
 ];
 
@@ -60,7 +64,7 @@ function FAQAccordion({ question, answer }: FAQAccordionPropTypes) {
           </AccordionSummary>
           </Box>
           <AccordionDetails >
-              <Typography sx={{ color: "black", textAlign: "left", paddingTop: 2, paddingBottom: 2, "&.MuiTypography-root": { color: "black" }}}>
+              <Typography sx={{ fontFamily: 'Inter, sans-serif', color: "black", textAlign: "left", paddingTop: 2, paddingBottom: 2, "&.MuiTypography-root": { color: "black" }}}>
                   {answer}
               </Typography>
           </AccordionDetails>
@@ -71,10 +75,10 @@ function FAQAccordion({ question, answer }: FAQAccordionPropTypes) {
 function FAQ() {
     return (
         <Card sx={{ backgroundColor: "#22262C" }} id="faq">
-            <Typography variant="h3" fontWeight={600} color="white"  sx={{ fontFamily: 'MuseoModerno, sans-serif' }} marginTop={2}>
+            <Typography variant="h3" fontWeight={600} color="white"  sx={{ fontFamily: 'MuseoModerno, sans-serif' }} marginTop={4}>
                 FAQs
             </Typography>
-            <Stack mt={3} direction="column" display="flex" alignItems={"center"} padding={2} spacing={5}>
+            <Stack mt={3} direction="column" display="flex" alignItems={"center"} padding={6} spacing={5}>
                 {FAQS.map((elem, index) => (
                     <FAQAccordion key={index} question={elem.Q} answer={elem.A} />
                 ))}
