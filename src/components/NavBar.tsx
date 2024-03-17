@@ -11,8 +11,9 @@ export default function NavBar() {
         position: "relative",
         top: "0px",
         right: "0px",
-        paddingTop: "2rem",
+        padding: 1.5,
         display: "flex",
+        alignItems: "center"
       }}
     >
       <NavBarIcon />
