@@ -46,7 +46,7 @@ export interface InfoCardProps {
 export default function InfoCard (props: InfoCardProps) {
   const styles = {
     padding: "1rem",
-    border: "3px black solid",
+    border: "5px black solid",
     borderRadius: processBorderSpecList(props.borderSpecList),
     ...props.sx,
   };

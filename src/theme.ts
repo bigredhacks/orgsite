@@ -19,7 +19,7 @@ const theme = createTheme({
           props: { variant: "primary" },
           style: {
             color: "black",
-            border: "2px black solid",
+            border: "5px black solid",
             borderRadius: "1em",
             boxShadow: "0.2em 0.3em 0px 0.2em black",
             "&:hover": {
