@@ -13,11 +13,12 @@ export default function HomePage() {
       <Hero />
       <MiniTeams />
 
-
       <Box>
         <TopBorder />
-        <Events />
-        <FAQPage />
+        <Box bgcolor={"primary.main"} color="white">
+          <Events />
+          <FAQPage />
+        </Box>
       </Box>
 
       <SponsorsPage />

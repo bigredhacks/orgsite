@@ -12,7 +12,7 @@ export default function Events() {
   // const cardStyle = isMobile;
   const typographyStyle = isMobile ? { mt: 3 } : {};
   return (
-    <Box bgcolor={"primary.main"} color="white" pb={10}>
+    <Box mb={10}>
       <Typography
         style={{
           fontSize: "50px",
