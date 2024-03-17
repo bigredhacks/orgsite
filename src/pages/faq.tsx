@@ -1,6 +1,6 @@
 import { Accordion, AccordionSummary, AccordionDetails, Typography, Stack, Card, Box} from '@mui/material/';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import "@fontsource/inter"; 
+import "@fontsource/inter";
 import "@fontsource/museomoderno";
 
 interface FAQAccordionPropTypes {
@@ -35,13 +35,13 @@ function FAQAccordion({ question, answer }: FAQAccordionPropTypes) {
           padding: 0.5,
           paddingBottom: 0,
           borderRadius: 5,
-          color: "white", 
-          mb: 2, 
+          color: "white",
+          mb: 2,
           '&:hover': {
               backgroundColor: '#FF77BB',
           },
           '&.MuiAccordion-root': {
-            borderRadius: 5, 
+            borderRadius: 5,
           },
         }}>
         <Box sx={{backgroundColor: "#0E1116", borderRadius: 5, padding: 2, marginBottom: 0.5, '&:hover': {
@@ -53,9 +53,9 @@ function FAQAccordion({ question, answer }: FAQAccordionPropTypes) {
             },},}}>
           <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: 'white'}} />}>
 
-            <Typography sx={{ 
-                fontFamily: 'Inter, sans-serif', 
-                borderRadius: 5, 
+            <Typography sx={{
+                fontFamily: 'Inter, sans-serif',
+                borderRadius: 5,
                 color: 'inherit',
                 textAlign: "left",
              }}>
@@ -64,7 +64,7 @@ function FAQAccordion({ question, answer }: FAQAccordionPropTypes) {
           </AccordionSummary>
           </Box>
           <AccordionDetails >
-              <Typography sx={{ fontFamily: 'Inter, sans-serif', color: "black", textAlign: "left", paddingTop: 2, paddingBottom: 2, "&.MuiTypography-root": { color: "black" }}}>
+              <Typography sx={{ fontFamily: 'Inter, sans-serif', color: "black", textAlign: "left", py: 2, "&.MuiTypography-root": { color: "black" }}}>
                   {answer}
               </Typography>
           </AccordionDetails>

@@ -1,5 +1,5 @@
 import "@fontsource/museomoderno";
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 
 export const Hero = () => {
   return (
@@ -26,15 +26,15 @@ export const Hero = () => {
       </Box>
 
       <Box px={20}>
-      <Typography variant="h6">
-        Each year, we host{" "}
-        <Typography variant="h6" fontWeight={"bold"} display={"inline"}>
-          BigRed//Hacks
+        <Typography variant="h6">
+          Each year, we host{" "}
+          <Typography variant="h6" fontWeight={"bold"} display={"inline"}>
+            BigRed//Hacks
+          </Typography>
+          , a student-run hackathon where you can learn new skills, build your
+          portfolio, attend fun sessions and connect with other hackers in the
+          Cornell community.
         </Typography>
-        , a student-run hackathon where you can learn new skills, build your
-        portfolio, attend fun sessions and connect with other hackers in the
-        Cornell community.
-      </Typography>
       </Box>
     </Stack>
   );

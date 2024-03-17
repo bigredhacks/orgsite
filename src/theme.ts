@@ -2,6 +2,7 @@ import { createTheme } from "@mui/material";
 
 const theme = createTheme({
   typography: {
+    
   },
   components: {
     MuiButtonBase: {
