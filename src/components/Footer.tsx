@@ -10,13 +10,12 @@ const Footer = () => {
       sx={{
         width: "100%",
         bottom: "0px",
-        mt: 10,
         display: "flex",
         justifyContent: "center",
         backgroundColor: "#22262C",
       }}
     >
-      <Stack spacing={1} mt="10px" mb="10px">
+      <Stack spacing={1} mt="10px" mb={5}>
         <Typography variant="h6" alignSelf="center" color="white">
           contact us!
         </Typography>

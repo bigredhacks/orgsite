@@ -6,6 +6,7 @@ import MiniTeams from "../components/MiniTeams";
 import { TopBorder } from "../components/TopBorder";
 import FAQPage from "../pages/faq";
 import SponsorsPage from "../pages/sponsors";
+import { BottomBorder } from "../components/BottomBorder";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
           <Events />
           <FAQPage />
         </Box>
+        <BottomBorder/>
       </Box>
 
       <SponsorsPage />

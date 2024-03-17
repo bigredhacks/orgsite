@@ -1,19 +1,21 @@
-import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/home";
-import TeamsPage from "./pages/teams";
+import { Box } from "@mui/material";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import { TopBorder } from "./components/TopBorder";
+import ApplyPage from "./pages/apply";
 import EventsPage from "./pages/events";
 import FAQPage from "./pages/faq";
+import HomePage from "./pages/home";
 import SponsorsPage from "./pages/sponsors";
-import ApplyPage from "./pages/apply";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import TeamsPage from "./pages/teams";
 
 function App() {
   return (
     <>
       <main>
-        <NavBar/>
+        <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/teams" element={<TeamsPage />} />
@@ -22,7 +24,10 @@ function App() {
           <Route path="/sponsors" element={<SponsorsPage />} />
           <Route path="/apply" element={<ApplyPage />} />
         </Routes>
-        <Footer />
+        <Box mt={10}>
+          <TopBorder />
+          <Footer />
+        </Box>
       </main>
     </>
   );
