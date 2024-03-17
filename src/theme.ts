@@ -23,7 +23,7 @@ const theme = createTheme({
             borderRadius: "1em",
             boxShadow: "0.2em 0.3em 0px 0.2em black",
             "&:hover": {
-              border: "2px black solid",
+              border: "5px black solid",
             },
           },
         },
