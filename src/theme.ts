@@ -1,14 +1,17 @@
 import { createTheme } from "@mui/material";
 
 const theme = createTheme({
-  typography: {
-    
+  palette: {
+    primary:{
+      main: "#22262C"
+    }
   },
+  typography: {},
   components: {
     MuiButtonBase: {
       defaultProps: {
-        disableRipple: true
-      }
+        disableRipple: true,
+      },
     },
     MuiButton: {
       variants: [
@@ -35,7 +38,7 @@ const theme = createTheme({
   },
 });
 
-declare module '@mui/material/Button' {
+declare module "@mui/material/Button" {
   interface ButtonPropsVariantOverrides {
     primary: true;
     secondary: true;

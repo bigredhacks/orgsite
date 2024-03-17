@@ -47,7 +47,7 @@ export default function UprightTeamsDropdown(props: UprightTeamsDropdownProps) {
                 marginBottom: "1rem",
               }}
             >
-              <Typography sx={{ fontWeight: "bold", fontfamily: "inter" }}>{teamName}</Typography>
+              <Typography variant="h5" sx={{ fontWeight: "bold", fontfamily: "inter" }}>{teamName}</Typography>
             </Button>
             <Typography sx={{fontfamily: "inter"}}>{description}</Typography>
           </Box>

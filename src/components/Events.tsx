@@ -12,7 +12,7 @@ export default function Events() {
   // const cardStyle = isMobile;
   const typographyStyle = isMobile ? { mt: 3 } : {};
   return (
-    <Box>
+    <Box bgcolor={"primary.main"} color="white" pb={10}>
       <Typography
         style={{
           fontSize: "50px",
@@ -20,7 +20,6 @@ export default function Events() {
           fontFamily: "MuseoModerno, sans-serif",
         }}
         fontWeight={400}
-        color="black"
         sx={typographyStyle}
       >
         events
@@ -29,7 +28,7 @@ export default function Events() {
         container
         spacing={5}
         justifyContent="center"
-        sx={{ mt: 0, mb: 4 }}
+        sx={{ mt: 0 }}
       >
         <Grid item lg={3} sm={4}>
           <EventPhoto
