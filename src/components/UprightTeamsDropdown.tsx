@@ -41,7 +41,7 @@ export default function UprightTeamsDropdown(props: UprightTeamsDropdownProps) {
             <img
               src={imgSrc}
               style={{
-                maxWidth: "20vw",
+                width:300,
                 filter: "drop-shadow( 10px 10px 0px rgba(0, 0, 0, 1))",
               }}
             ></img>
