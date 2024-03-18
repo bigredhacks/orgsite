@@ -31,7 +31,7 @@ export default function NavBar() {
         <NavBarButton
           bg="#FF3225"
           text="Apply"
-          variant="primary"
+          variant="apply"
           sx={{
             // Align text with rest of buttons, accounting for borders
             transform: "translateY(-2px)",

@@ -18,6 +18,7 @@ export default function UprightTeamsDropdown(props: UprightTeamsDropdownProps) {
       <Box sx={{ mx: "auto" }}>
         <InfoCard
           sx={{
+            position: "relative",
             display: "flex",
             width: "30vw",
             minHeight: "20vw",
@@ -27,12 +28,21 @@ export default function UprightTeamsDropdown(props: UprightTeamsDropdownProps) {
           }}
           borderSpecList={borderSpecList}
         >
-          <Box sx={{ maxHeight: "fit-content", marginTop: "-11vw" }}>
+          <Box
+            sx={{
+              position: "absolute",
+              top: -150,
+              mx: "auto",
+              left: 0,
+              right: 0,
+            }}
+          >
             {/* TODO: Mobile responsiveness is wack */}
             <img
               src={imgSrc}
               style={{
                 maxWidth: "20vw",
+                filter: "drop-shadow( 10px 10px 0px rgba(0, 0, 0, 1))",
               }}
             ></img>
           </Box>
@@ -41,15 +51,21 @@ export default function UprightTeamsDropdown(props: UprightTeamsDropdownProps) {
             <Button
               variant="primary"
               sx={{
+                mt: 12,
                 backgroundColor: "white",
                 "&:hover": { backgroundColor: "white" },
                 width: "90%",
                 marginBottom: "1rem",
               }}
             >
-              <Typography variant="h5" sx={{ fontWeight: "bold", fontfamily: "inter" }}>{teamName}</Typography>
+              <Typography
+                variant="h5"
+                sx={{ fontWeight: "bold", fontfamily: "inter" }}
+              >
+                {teamName}
+              </Typography>
             </Button>
-            <Typography sx={{fontfamily: "inter"}}>{description}</Typography>
+            <Typography sx={{ fontfamily: "inter" }}>{description}</Typography>
           </Box>
         </InfoCard>
       </Box>
