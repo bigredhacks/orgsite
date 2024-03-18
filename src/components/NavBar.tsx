@@ -7,21 +7,21 @@ export default function NavBar() {
     <Box
       id="navbar-wrapper"
       sx={{
-        width: "100%",
-        position: "relative",
         top: "0px",
         right: "0px",
-        paddingTop: "2rem",
+        padding: 1.5,
+        px: 4,
         display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
       }}
     >
       <NavBarIcon />
       <Box
         id="navbar-links"
         sx={{
-          paddingRight: "2rem",
           display: "flex",
-          justifyContent: "end",
+          gap: 2,
         }}
       >
         <NavBarButton bg="none" text="Teams" variant="secondary" />
@@ -31,7 +31,7 @@ export default function NavBar() {
         <NavBarButton
           bg="#FF3225"
           text="Apply"
-          variant="primary"
+          variant="apply"
           sx={{
             // Align text with rest of buttons, accounting for borders
             transform: "translateY(-2px)",

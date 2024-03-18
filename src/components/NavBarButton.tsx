@@ -33,7 +33,7 @@ export default function NavBarButton(props: NavBarButtonProps) {
         to={"/" + (props.to ?? props.text.toLowerCase())}
         style={{ color: "inherit" }}
       >
-        <Typography sx={{ margin: 0 }}>{props.text}</Typography>
+        <Typography variant="body1" sx={{ margin: 0 }}>{props.text}</Typography>
       </Link>
     </Button>
   );

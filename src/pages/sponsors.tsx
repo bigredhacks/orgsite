@@ -1,4 +1,4 @@
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, Link } from "@mui/material";
 import SponsorsList from "../components/SponsorsList";
 import "@fontsource/inter";
 import "@fontsource/museomoderno";
@@ -18,8 +18,7 @@ export default function SponsorsPage() {
   return (
     <Box
       sx={{
-        color: "#22262C",
-        padding: 12,
+        mx: 12,
         textAlign: "center",
       }}
     >
@@ -42,7 +41,7 @@ export default function SponsorsPage() {
         Interested in sponsoring BigRed//Hacks 2024?
       </Typography>
       <Typography variant="body1" sx={{ fontFamily: "inter" }}>
-        Email us at bigredhacks@cornell.edu!
+        Email us at <Link href="mailto:bigredhacks@cornell.edu">bigredhacks@cornell.edu</Link>!
       </Typography>
     </Box>
   );

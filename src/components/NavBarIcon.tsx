@@ -8,9 +8,8 @@ export default function NavBarIcon() {
         <img
           src="/brh-logo.png"
           style={{
-            width: "3rem",
-            height: "3rem",
-            marginLeft: "2rem",
+            width: "2rem",
+            height: "2rem",
             padding: "0.75rem",
             border: "2px solid #DDDDDD",
             borderRadius: "25%",
