@@ -13,7 +13,7 @@ export const Hero = () => {
             "radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(165, 185, 255, 0.2) 0%, rgba(110, 191, 244, 0.0447917) 77.08%, rgba(70, 144, 213, 0) 100%)",
         }}
       >
-        <img style={{ display: "block" }} src="../../public/hero.svg"></img>
+        <img style={{ display: "block" }} src="/hero.svg"></img>
         <Typography
           fontFamily="MuseoModerno, sans-serif"
           fontSize="70px"

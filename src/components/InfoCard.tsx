@@ -43,7 +43,7 @@ export interface InfoCardProps {
  *
  * Example: <InfoCard topLeft bottomRight>{child}</InfoCard>
  */
-export default function InfoCard (props: InfoCardProps) {
+export default function InfoCard(props: InfoCardProps) {
   const styles = {
     padding: "1rem",
     border: "5px black solid",

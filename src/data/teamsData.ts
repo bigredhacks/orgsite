@@ -3,7 +3,7 @@ import { BorderSpec } from "../components/InfoCard";
 
 const teamsData: TeamsDropdownProps[] = [
   {
-    sx: { backgroundColor: "#4361EE" },
+    sx: { backgroundColor: "purple.main" },
     imgSrc: "/placeholder.png",
     teamName: "Logistics",
     description:
@@ -11,7 +11,7 @@ const teamsData: TeamsDropdownProps[] = [
     borderSpecList: [BorderSpec.TopLeft],
   },
   {
-    sx: { backgroundColor: "#4CC9F0" },
+    sx: { backgroundColor: "blue.main" },
     imgSrc: "/placeholder.png",
     teamName: "Software",
     description:
@@ -20,7 +20,7 @@ const teamsData: TeamsDropdownProps[] = [
     borderSpecList: [BorderSpec.TopRight],
   },
   {
-    sx: { backgroundColor: "#FF77BB" },
+    sx: { backgroundColor: "pink.main" },
     imgSrc: "/placeholder.png",
     teamName: "Design",
     description:
@@ -28,7 +28,7 @@ const teamsData: TeamsDropdownProps[] = [
     borderSpecList: [BorderSpec.TopLeft],
   },
   {
-    sx: { backgroundColor: "#EEFE65" },
+    sx: { backgroundColor: "yellow.main" },
     imgSrc: "/placeholder.png",
     teamName: "Sponsorship",
     description:

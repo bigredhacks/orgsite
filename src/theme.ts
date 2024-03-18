@@ -5,6 +5,18 @@ const theme = createTheme({
     primary: {
       main: "#22262C",
     },
+    pink: {
+      main: "#FF77BB",
+    },
+    blue: {
+      main: "#4CC9F0",
+    },
+    yellow: {
+      main: "#EEFE65",
+    },
+    purple: {
+      main: "#4361EE",
+    },
   },
   typography: {},
   components: {
@@ -53,6 +65,22 @@ declare module "@mui/material/Button" {
     primary: true;
     secondary: true;
     apply: true;
+  }
+}
+
+declare module "@mui/material/styles" {
+  interface Palette {
+    purple: Palette["primary"];
+    blue: Palette["primary"];
+    pink: Palette["primary"];
+    yellow?: PaletteOptions["primary"];
+  }
+
+  interface PaletteOptions {
+    purple?: PaletteOptions["primary"];
+    blue?: PaletteOptions["primary"];
+    pink?: PaletteOptions["primary"];
+    yellow?: PaletteOptions["primary"];
   }
 }
 

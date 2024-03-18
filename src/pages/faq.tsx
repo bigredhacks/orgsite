@@ -48,7 +48,7 @@ function FAQAccordion({ question, answer }: FAQAccordionPropTypes) {
         color: "white",
         mb: 2,
         "&:hover": {
-          backgroundColor: "#FF77BB",
+          backgroundColor: "pink.main",
         },
         "&.MuiAccordion-root": {
           borderRadius: 5,
@@ -64,11 +64,11 @@ function FAQAccordion({ question, answer }: FAQAccordionPropTypes) {
           "&:hover": {
             ".MuiTypography-root": {
               // text on hover
-              color: "#FF77BB",
+              color: "pink.main",
             },
             ".MuiSvgIcon-root": {
               //icon color on hover
-              color: "#FF77BB",
+              color: "pink.main",
             },
           },
         }}

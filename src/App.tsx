@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import { TopBorder } from "./components/Borders";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import { TopBorder } from "./components/TopBorder";
 import ApplyPage from "./pages/apply";
 import EventsPage from "./pages/events";
 import FAQPage from "./pages/faq";
