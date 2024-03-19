@@ -1,6 +1,5 @@
 import { Theme } from "@emotion/react";
 import { Button, SxProps, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
 
 export interface NavBarButtonProps {
   variant: string;
@@ -29,12 +28,14 @@ export default function NavBarButton(props: NavBarButtonProps) {
       }}
       disableRipple
     >
-      <Link
-        to={"/" + (props.to ?? props.text.toLowerCase())}
+      <a
+        href={"/" + (props.to ?? props.text.toLowerCase())}
         style={{ color: "inherit" }}
       >
-        <Typography variant="body1" sx={{ margin: 0 }}>{props.text}</Typography>
-      </Link>
+        <Typography variant="body1" sx={{ margin: 0 }}>
+          {props.text}
+        </Typography>
+      </a>
     </Button>
   );
 }

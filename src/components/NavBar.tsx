@@ -25,9 +25,9 @@ export default function NavBar() {
         }}
       >
         <NavBarButton bg="none" text="Teams" variant="secondary" />
-        <NavBarButton bg="none" text="Events" variant="secondary" />
-        <NavBarButton bg="none" text="FAQ" variant="secondary" />
-        <NavBarButton bg="none" text="Sponsors" variant="secondary" />
+        <NavBarButton bg="none" text="#events" variant="secondary" />
+        <NavBarButton bg="none" text="#faq" variant="secondary" />
+        <NavBarButton bg="none" text="#sponsors" variant="secondary" />
         <NavBarButton
           bg="#FF3225"
           text="Apply"

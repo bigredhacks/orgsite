@@ -14,9 +14,9 @@ export default function SponsorsList({ numColumns = 3 }: SponsorsListProps) {
       display: 'grid',
       gridTemplateColumns: `repeat(${numColumns}, 1fr)`,
       gridTemplateRows: 'auto',
-      justifyItems: 'center', 
-      alignItems: 'center', 
-      gridRowGap: 32, 
+      justifyItems: 'center',
+      alignItems: 'center',
+      gridRowGap: 32,
     }}>
       {sponsorArray.map((sponsor: SponsorsMemberProps, index: number) => (
         <SponsorsMember key={index} {...sponsor} />
