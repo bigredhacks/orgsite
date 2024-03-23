@@ -1,9 +1,9 @@
 import { Box, Button, Typography } from "@mui/material";
-import InfoCard, { InfoCardProps, BorderSpec } from "./InfoCard";
-import TeamMemberList from "../components/TeamMemberList.tsx";
 import { useState } from "react";
+import TeamMemberList from "../components/TeamMemberList.tsx";
+import InfoCard, { BorderSpec, InfoCardProps } from "./InfoCard";
 
-import "./TeamMemberList.css"
+import "./TeamMemberList.css";
 
 export interface TeamsDropdownProps extends InfoCardProps {
   imgSrc: string;
@@ -33,7 +33,13 @@ export default function TeamsDropdown(props: TeamsDropdownProps) {
       >
         <Box sx={{ maxHeight: "fit-content" }}>
           {/* TODO: Mobile responsiveness is wack */}
-          <img src={imgSrc} style={{ maxHeight: "150px" }}></img>
+          <img
+            src={imgSrc}
+            style={{
+              maxHeight: "230px",
+              filter: "drop-shadow( 10px 10px 0px rgba(0, 0, 0, 1))",
+            }}
+          ></img>
         </Box>
         <Box sx={{ textAlign: "left" }}>
           <Button

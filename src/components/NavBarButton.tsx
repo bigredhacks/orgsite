@@ -1,6 +1,6 @@
 import { Theme } from "@emotion/react";
 import { Button, SxProps, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 export interface NavBarButtonProps {
   variant: string;
@@ -29,12 +29,14 @@ export default function NavBarButton(props: NavBarButtonProps) {
       }}
       disableRipple
     >
-      <Link
+      <HashLink
         to={"/" + (props.to ?? props.text.toLowerCase())}
         style={{ color: "inherit" }}
       >
-        <Typography variant="body1" sx={{ margin: 0 }}>{props.text}</Typography>
-      </Link>
+        <Typography variant="body1" sx={{ margin: 0 }}>
+          {props.text}
+        </Typography>
+      </HashLink>
     </Button>
   );
 }
