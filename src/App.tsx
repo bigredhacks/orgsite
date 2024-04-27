@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import "./App.css";
 import { TopBorder } from "./components/Borders";
 import Footer from "./components/Footer";
@@ -15,19 +15,21 @@ function App() {
   return (
     <>
       <main>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/teams" element={<TeamsPage />} />
-          <Route path="/faq" element={<FAQPage />} />
-          <Route path="/events" element={<EventsPage />} />
-          <Route path="/sponsors" element={<SponsorsPage />} />
-          <Route path="/apply" element={<ApplyPage />} />
-        </Routes>
-        <Box mt={10}>
-          <TopBorder />
-          <Footer />
-        </Box>
+        <HashRouter>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/teams" element={<TeamsPage />} />
+            <Route path="/faq" element={<FAQPage />} />
+            <Route path="/events" element={<EventsPage />} />
+            <Route path="/sponsors" element={<SponsorsPage />} />
+            <Route path="/apply" element={<ApplyPage />} />
+          </Routes>
+          <Box mt={10}>
+            <TopBorder />
+            <Footer />
+          </Box>
+        </HashRouter>
       </main>
     </>
   );
