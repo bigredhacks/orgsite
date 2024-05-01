@@ -1,6 +1,18 @@
 import { TeamsMemberProps } from "../components/TeamsMember";
 
 const teamMembers: Record<string, TeamsMemberProps[]> = {
+  "Executive Directors": [
+    {
+      imgSrc: "/placeholder.png",
+      name: "Yuki Suwabe",
+      position: "Lead",
+    },
+    {
+      imgSrc: "/team-members/JosephYoo.jpg",
+      name: "Joseph Yoo",
+      position: "Lead",
+    },
+  ],
   Logistics: [
     {
       // imgSrc: "/team-members/YukiSuwabe.jpg",
@@ -52,7 +64,7 @@ const teamMembers: Record<string, TeamsMemberProps[]> = {
       position: "Lead",
     },
     {
-      imgSrc: "/team-members/EvanZhu.jpeg",
+      imgSrc: "/placeholder.png",
       name: "Evan Zhu",
     },
     {

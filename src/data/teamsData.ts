@@ -7,7 +7,7 @@ const teamsData: TeamsDropdownProps[] = [
     imgSrc: "/placeholder.png",
     teamName: "Executive Directors",
     description:
-      "Oversees the operation of all subteams and coordinates work across subteams. Spearheads the overall planning of BigRed//Hacks, Cornell’s largest student-run hackathon.",
+      "Oversees the operation of all subteams and coordinates work across subteams. Spearheads the overall planning of BigRed//Hacks, Cornell's largest student-run hackathon.",
     placeImgRight: true,
     borderSpecList: [BorderSpec.TopRight],
   },

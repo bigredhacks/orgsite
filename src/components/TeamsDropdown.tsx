@@ -64,6 +64,8 @@ export default function TeamsDropdown(props: TeamsDropdownProps) {
         className={showMembers ? "dropdown revealed" : "dropdown"}
         sx={{ overflow: "hidden" }}
       >
+        {/* placeholder for team picture */}
+        <img src={imgSrc} style={{ maxHeight: "150px" }}></img>
         <TeamMemberList teamName={teamName} />
       </Box>
     </>

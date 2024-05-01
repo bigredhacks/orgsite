@@ -9,24 +9,46 @@ export interface TeamMemberListProps {
 }
 
 export default function TeamMemberList(props: TeamMemberListProps) {
-  const {teamName, sx} = props;
+  const { teamName, sx } = props;
 
   const numElements = props.numElements ?? 4;
 
   return (
     <>
+      <Box sx={{ textAlign: "center", marginBottom: "10px" }}>
+        <h2>Lead</h2>
+      </Box>
       <Box sx={{
         display: "grid",
         gridTemplateColumns: `repeat(${numElements}, 1fr)`,
         gridAutoRows: '1fr',
         gap: "5px",
         alignItems: "start",
-        justifyItems: "center", 
+        justifyItems: "center",
         ...sx
       }}>
         {teamMembers[teamName].map((props2) => (
-          
-          <TeamsMember {...props2} />
+          props2.position === "Lead" ? (
+            <TeamsMember {...props2} />
+          ) : null
+        ))}
+      </Box>
+      <Box sx={{ textAlign: "center", marginBottom: "10px" }}>
+        <h2>Team</h2>
+      </Box>
+      <Box sx={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${numElements}, 1fr)`,
+        gridAutoRows: '1fr',
+        gap: "5px",
+        alignItems: "start",
+        justifyItems: "center",
+        ...sx
+      }}>
+        {teamMembers[teamName].map((props2) => (
+          props2.position !== "Lead" ? (
+            <TeamsMember {...props2} />
+          ) : null
         ))}
       </Box>
     </>
