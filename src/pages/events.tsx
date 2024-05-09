@@ -16,7 +16,7 @@ export default function EventsPage() {
       <Typography variant="h3" sx={{ fontFamily: 'MuseoModerno, sans-serif', mb: 2, mt: 3}}>upcoming</Typography>
       <Box><EventsBlock {...eventsData[0]}/></Box>
       <Typography variant="h3" sx={{ fontFamily: 'MuseoModerno, sans-serif', mb: 2, mt: 3}}>past</Typography>
-      <Box sx={{ display: "flex", flexDirection: "column", gap: "40px" }}>
+      <Box sx={{ display: "flex", flexDirection: "column", gap: "100px" }}>
         {eventsData.slice(1).map((props) => (
           <EventsBlock {...props} />
         ))}
