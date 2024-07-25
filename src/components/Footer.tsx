@@ -55,7 +55,7 @@ const Footer = () => {
           made with 💙 by the BRH team
         </Typography>
         <Typography variant="h6" alignSelf="center" color="white">
-          Registered Student Organization of Cornell Univesity
+          Registered Student Organization of Cornell University
         </Typography>
       </Stack>
     </Box>
