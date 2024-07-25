@@ -54,6 +54,9 @@ const Footer = () => {
         <Typography variant="h6" alignSelf="center" color="white">
           made with 💙 by the BRH team
         </Typography>
+        <Typography variant="h6" alignSelf="center" color="white">
+          Registered Student Organization of Cornell Univesity
+        </Typography>
       </Stack>
     </Box>
   );
