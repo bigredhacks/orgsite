@@ -43,7 +43,7 @@ const Footer = () => {
           </IconButton>
           <IconButton aria-label="LinkedIn">
             <a
-              href="https://www.linkedin.com/company/bigredhacks/mycompany/"
+              href="https://www.linkedin.com/in/bigred-hacks-698107269/"
               target="_blank"
               rel="noopener noreferrer"
             >
