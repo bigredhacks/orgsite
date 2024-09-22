@@ -18,11 +18,12 @@ export default function HomePage() {
         <Box bgcolor={"primary.main"} color="white">
           <Events />
           <FAQPage />
+          <SponsorsPage />
         </Box>
         <BottomBorder />
       </Box>
 
-      <SponsorsPage />
+      {/* <SponsorsPage /> */}
       {/* <Countdown targetDate={1709960400000}></Countdown> */}
     </Stack>
   );

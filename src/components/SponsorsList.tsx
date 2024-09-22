@@ -1,26 +1,21 @@
 import SponsorsMember, { SponsorsMemberProps } from './SponsorsMember';
-import { Box } from '@mui/material';
+import { Grid, ListItem} from '@mui/material';
 import sponsors from '../data/sponsors';
-
-export interface SponsorsListProps {
-  numColumns?: number;
-}
-
-export default function SponsorsList({ numColumns = 3 }: SponsorsListProps) {
+export default function SponsorsList() {
   const sponsorArray = Object.values(sponsors).flat();
-
   return (
-    <Box sx={{
-      display: 'grid',
-      gridTemplateColumns: `repeat(${numColumns}, 1fr)`,
-      gridTemplateRows: 'auto',
-      justifyItems: 'center', 
-      alignItems: 'center', 
-      gridRowGap: 32, 
-    }}>
+    <Grid container
+      columnGap={2}
+      rowGap={2}
+      direction="row"
+      justifyContent="center"
+      alignItems="center"
+      gridTemplateColumns="repeat(3, 1fr)">
       {sponsorArray.map((sponsor: SponsorsMemberProps, index: number) => (
-        <SponsorsMember key={index} {...sponsor} />
+          <Grid item sx={{justifyContent: "center", alignItems: "center"}}>
+            <ListItem> <SponsorsMember key={index} {...sponsor} /> </ListItem>
+          </Grid>
       ))}
-    </Box>
+    </Grid>
   );
 }
