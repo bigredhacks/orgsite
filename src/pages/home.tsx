@@ -13,10 +13,10 @@ export default function HomePage() {
       <Hero />
       <MiniTeams />
 
-      <Box>
+      <Box id="events">
         <TopBorder />
         <Box bgcolor={"primary.main"} color="white">
-          <Events />
+          <Events/>
           <FAQPage />
         </Box>
         <BottomBorder />

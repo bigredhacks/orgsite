@@ -107,7 +107,7 @@ function FAQAccordion({ question, answer }: FAQAccordionPropTypes) {
 
 function FAQ() {
   return (
-    <Box sx={{ m: 0, p: 0 }}>
+    <Box sx={{ m: 0, p: 0 }} id = "faq">
       <Card sx={{ backgroundColor: "primary.main" }} id="faq">
         <Typography
           variant="h3"
