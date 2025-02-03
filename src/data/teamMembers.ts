@@ -3,44 +3,37 @@ import { TeamsMemberProps } from "../components/TeamsMember";
 const teamMembers: Record<string, TeamsMemberProps[]> = {
   Logistics: [
     {
-      // imgSrc: "/team-members/YukiSuwabe.jpg",
       imgSrc: "/placeholder.png",
       name: "Yuki Suwabe",
       position: "Lead",
     },
     {
-      imgSrc: "/team-members/JosephYoo.jpg",
+      imgSrc: "/placeholder.png",
       name: "Joseph Yoo",
       position: "Lead",
-    },
-    {
-      imgSrc: "/placeholder.png",
-      name: "Vicki Yang",
-      position: "Social Chair",
-    },
-    {
-      imgSrc: "/placeholder.png",
-      name: "Neha Sunkara",
     },
     {
       imgSrc: "/placeholder.png",
       name: "Anna Zweck-Bronner",
     },
     {
-      imgSrc: "/team-members/SamShridhar.jpeg",
+      imgSrc: "/placeholder.png",
       name: "Samarth Shridhar",
     },
     {
-      imgSrc: "/team-members/TinaChen.jpg",
+      imgSrc: "/placeholder.png",
       name: "Tina Chen",
+    },
+    {
+      imgSrc: "/placeholder.png",
+      name: "Rishi Shah",
+    },
+    {
+      imgSrc: "/placeholder.png",
+      name: "Krish Desai",
     },
   ],
   Software: [
-    {
-      imgSrc: "/placeholder.png",
-      name: "Richard Kim",
-      position: "Advisor",
-    },
     {
       imgSrc: "/placeholder.png",
       name: "Kelly Yu",
@@ -52,32 +45,30 @@ const teamMembers: Record<string, TeamsMemberProps[]> = {
       position: "Lead",
     },
     {
-      imgSrc: "/team-members/EvanZhu.jpeg",
+      imgSrc: "/placeholder.png",
       name: "Evan Zhu",
     },
     {
       imgSrc: "/placeholder.png",
-      name: "Lisel Wong",
+      name: "Liesel Wong",
     },
     {
       imgSrc: "/placeholder.png",
-      name: "Claiire Wang",
+      name: "Claire Wang",
     },
     {
       imgSrc: "/placeholder.png",
-      name: "Jeffrey Huang",
+      name: "James Tu",
+    },
+    {
+      imgSrc: "/placeholder.png",
+      name: "Tony Oh",
     },
   ],
   Design: [
     {
-      // imgSrc: "/public/team-members/ShaniaCabrera.jpeg",
       imgSrc: "/placeholder.png",
       name: "Shania Cabrera",
-      position: "Lead",
-    },
-    {
-      imgSrc: "/placeholder.png",
-      name: "Daniella Xu",
       position: "Lead",
     },
     {
@@ -86,51 +77,37 @@ const teamMembers: Record<string, TeamsMemberProps[]> = {
     },
     {
       imgSrc: "/placeholder.png",
-      name: "Althea Bata",
+      name: "Brynn Li",
     },
-    // {
-    //   imgSrc: "/placeholder.png",
-    //   name: "Joseph",
-    //   position: "Lead",
-    // },
-    // {
-    //   imgSrc: "/placeholder.png",
-    //   name: "Joseph",
-    //   position: "Lead",
-    // },
-    // {
-    //   imgSrc: "/placeholder.png",
-    //   name: "Joseph",
-    //   position: "Lead",
-    // },
-    // {
-    //   imgSrc: "/placeholder.png",
-    //   name: "Joseph",
-    //   position: "Lead",
-    // },
-    // {
-    //   imgSrc: "/placeholder.png",
-    //   name: "Joseph",
-    //   position: "Lead",
-    // },
-  ],
-  Sponsorship: [
     {
       imgSrc: "/placeholder.png",
-      name: "Althea Bata",
+      name: "Michelle Kim",
     },
+    {
+      imgSrc: "/placeholder.png",
+      name: "Caroline Cheng",
+    },
+    {
+      imgSrc: "/placeholder.png",
+      name: "Leah Kim",
+    },
+    {
+      imgSrc: "/placeholder.png",
+      name: "Harry Lin",
+    },
+  ],
+  Sponsorship: [
     {
       imgSrc: "/placeholder.png",
       name: "Caroline Zhu",
     },
     {
       imgSrc: "/placeholder.png",
-      name: "Parker Rho",
+      name: "Afsheen Alvi",
     },
     {
-      // imgSrc: "/public/team-members/AfsheenAlvi.jpeg",
       imgSrc: "/placeholder.png",
-      name: "Afsheen Alvi",
+      name: "Parker Rho",
     },
   ],
 };
