@@ -34,7 +34,7 @@ export default function Events() {
           <EventPhoto
             img={event2017}
             year="Upcoming"
-            date="March 9th/10th"
+            date="Coming Soon"
           ></EventPhoto>
         </Grid>
         <Grid item lg={3} sm={4}>
